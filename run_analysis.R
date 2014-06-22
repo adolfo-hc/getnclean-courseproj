@@ -66,4 +66,4 @@ rm(X_shorted, df_melt, i)
 write.csv(tidy_df, file = "samsung_tidy.csv", row.names = FALSE)
 
 #Saving to a .txt file the final tidy data frame
-write.table(tidy_df, file = "samsung_tidy.txt", row.names = FALSE)
+#write.table(tidy_df, file = "samsung_tidy.txt", row.names = FALSE)
