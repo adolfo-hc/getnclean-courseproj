@@ -57,7 +57,7 @@ names(tidy_df) <- gsub("-X$", ".Xaxis", names(tidy_df))
 names(tidy_df) <- gsub("-Y$", ".Yaxis", names(tidy_df))
 names(tidy_df) <- gsub("-Z$", ".Zaxis", names(tidy_df))
 names(tidy_df) <- gsub("^t", "Time.", names(tidy_df))
-names(tidy_df) <- gsub("^f", "Fourier.", names(tidy_df))
+names(tidy_df) <- gsub("^f", "Freq.", names(tidy_df))
 
 #Removing sub-data frames from memory
 rm(X_shorted, df_melt, i)
@@ -66,4 +66,4 @@ rm(X_shorted, df_melt, i)
 write.csv(tidy_df, file = "samsung_tidy.csv", row.names = FALSE)
 
 #Saving to a .txt file the final tidy data frame
-#write.table(tidy_df, file = "samsung_tidy.txt", row.names = FALSE)
+write.table(tidy_df, file = "samsung_tidy.txt", row.names = FALSE)
